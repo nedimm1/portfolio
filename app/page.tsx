@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import profileImg from "./_assets/profile.jpeg";
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
           <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-cyan-400 via-blue-500 to-violet-500 blur-md opacity-70" />
           <div className="relative h-56 w-56 overflow-hidden rounded-full ring-4 ring-white/10 shadow-2xl md:h-64 md:w-64">
             <Image
-              src="/profile.jpeg"
+              src={profileImg}
               alt="Nedim Muminovic"
               fill
               priority
