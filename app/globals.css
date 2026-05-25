@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #fdfbff;
-  --foreground: #1a1033;
+  --background: #0a0a14;
+  --foreground: #e5e7eb;
 }
 
 html {
@@ -15,29 +15,29 @@ body {
   color: var(--foreground);
   background: var(--background);
   background-image:
-    radial-gradient(at 0% 0%, rgba(255, 175, 204, 0.25) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(168, 196, 255, 0.25) 0px, transparent 50%),
-    radial-gradient(at 50% 100%, rgba(206, 168, 255, 0.18) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(6, 182, 212, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.16) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(139, 92, 246, 0.14) 0px, transparent 50%);
   background-attachment: fixed;
   min-height: 100vh;
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #ff6b9d 0%, #845ec2 50%, #4d8dff 100%);
+  background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 50%, #8b5cf6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .gradient-btn {
-  background: linear-gradient(135deg, #ff6b9d 0%, #845ec2 50%, #4d8dff 100%);
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
   background-size: 200% 200%;
   transition: background-position 0.5s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -45,5 +45,5 @@ body {
 .gradient-btn:hover {
   background-position: 100% 100%;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px -10px rgba(132, 94, 194, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.6);
 }
