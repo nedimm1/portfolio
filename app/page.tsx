@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import profileImg from "./_assets/profile.jpeg";
+import arabicFlashcarderIcon from "./_assets/arabic-flashcarder-icon.png";
+import hifzerIcon from "./_assets/hifzer-icon.jpeg";
 
 export default function Home() {
   return (
@@ -94,11 +96,14 @@ export default function Home() {
 
         <article className="glass group relative overflow-hidden rounded-3xl p-8 shadow-xl transition hover:shadow-2xl md:p-12">
           <div className="grid gap-8 md:grid-cols-[1fr,1.5fr] md:items-center">
-            <div className="relative mx-auto flex h-56 w-56 items-center justify-center rounded-3xl bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-500 shadow-xl md:h-64 md:w-64">
-              <span className="text-7xl md:text-8xl">🇸🇦</span>
-              <div className="absolute -bottom-3 -right-3 rounded-2xl bg-slate-900 px-4 py-2 text-xs font-bold text-cyan-300 shadow-lg ring-1 ring-white/10">
-                Live on stores
-              </div>
+            <div className="relative mx-auto h-56 w-56 overflow-hidden rounded-3xl shadow-xl ring-1 ring-white/10 md:h-64 md:w-64">
+              <Image
+                src={arabicFlashcarderIcon}
+                alt="Arabic Flashcarder app icon"
+                fill
+                className="object-cover object-[center_15%]"
+                sizes="(min-width: 768px) 256px, 224px"
+              />
             </div>
 
             <div>
@@ -129,8 +134,68 @@ export default function Home() {
                 </li>
               </ul>
               <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.nedimmuminovic.arabicflashcarder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="gradient-btn rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-lg"
+                >
+                  Google Play →
+                </a>
                 <Link
                   href="/privacy-policy/arabic-flashcarder"
+                  className="rounded-full bg-white/5 px-5 py-2.5 text-sm font-semibold text-slate-200 ring-1 ring-white/10 transition hover:bg-white/10"
+                >
+                  Privacy policy →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article className="glass group relative mt-8 overflow-hidden rounded-3xl p-8 shadow-xl transition hover:shadow-2xl md:p-12">
+          <div className="grid gap-8 md:grid-cols-[1fr,1.5fr] md:items-center">
+            <div className="relative mx-auto h-56 w-56 overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-white/10 md:h-64 md:w-64">
+              <Image
+                src={hifzerIcon}
+                alt="Hifzer Quran app icon"
+                fill
+                className="object-contain p-4"
+                sizes="(min-width: 768px) 256px, 224px"
+              />
+            </div>
+
+            <div>
+              <span className="inline-block rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-semibold text-cyan-300 ring-1 ring-cyan-500/20">
+                Mobile App · iOS & Android
+              </span>
+              <h3 className="mt-3 text-2xl font-extrabold text-white md:text-3xl">
+                Hifzer Quran
+              </h3>
+              <p className="mt-3 text-slate-400 leading-relaxed">
+                A Quran memorization (Hifz) companion that helps users learn
+                and retain verses through structured review. Track your
+                progress surah by surah, set memorization goals, and revise
+                with spaced repetition — designed for a calm, focused study
+                experience.
+              </p>
+              <ul className="mt-5 flex flex-wrap gap-2 text-xs font-medium text-slate-300">
+                <li className="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">
+                  Quran memorization
+                </li>
+                <li className="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">
+                  Spaced repetition
+                </li>
+                <li className="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">
+                  Progress tracking
+                </li>
+                <li className="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">
+                  Goal setting
+                </li>
+              </ul>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link
+                  href="/privacy-policy/hifzer"
                   className="rounded-full bg-white/5 px-5 py-2.5 text-sm font-semibold text-slate-200 ring-1 ring-white/10 transition hover:bg-white/10"
                 >
                   Privacy policy →
