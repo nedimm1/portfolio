@@ -10,17 +10,17 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute top-0 -left-20 h-72 w-72 rounded-full bg-cyan-500/15 blur-3xl" />
-        <div className="absolute top-32 right-0 h-80 w-80 rounded-full bg-blue-500/15 blur-3xl" />
+        <div className="absolute top-0 -left-20 h-72 w-72 rounded-full bg-accent/[0.06] blur-3xl" />
+        <div className="absolute top-32 right-0 h-80 w-80 rounded-full bg-accent-light/[0.04] blur-3xl" />
       </div>
 
       <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 py-6">
-        <Link href="/" className="text-lg font-bold gradient-text">
+        <Link href="/" className="text-lg font-bold accent-text">
           Nedim.dev
         </Link>
         <Link
           href="/"
-          className="text-sm font-medium text-slate-300 hover:text-cyan-400 transition"
+          className="text-sm font-medium text-muted hover:text-accent transition"
         >
           ← Back to portfolio
         </Link>
@@ -29,20 +29,20 @@ export default function PrivacyPolicyPage() {
       <article className="mx-auto max-w-3xl px-6 py-12">
         <div className="glass rounded-3xl p-8 shadow-xl md:p-12">
           <header className="mb-8 border-b border-white/10 pb-6">
-            <span className="inline-block rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-semibold text-cyan-300 ring-1 ring-cyan-500/20">
+            <span className="chip inline-block rounded-full px-3 py-1 text-xs font-semibold text-accent">
               Arabic Flashcarder
             </span>
-            <h1 className="mt-3 text-3xl font-extrabold text-white md:text-4xl">
-              Privacy <span className="gradient-text">Policy</span>
+            <h1 className="mt-3 font-display text-3xl font-extrabold text-ink md:text-4xl">
+              Privacy <span className="accent-text">Policy</span>
             </h1>
-            <p className="mt-2 text-sm text-slate-500">
+            <p className="mt-2 text-sm text-muted">
               Last updated: February 2026
             </p>
           </header>
 
-          <div className="prose prose-invert max-w-none space-y-8 text-slate-300">
+          <div className="prose prose-invert max-w-none space-y-8 text-muted">
             <section>
-              <h2 className="text-xl font-bold text-white">Overview</h2>
+              <h2 className="text-xl font-bold text-ink">Overview</h2>
               <p className="mt-2 leading-relaxed">
                 Arabic Flashcarder (&quot;we&quot;, &quot;our&quot;, or
                 &quot;the app&quot;) is committed to protecting your privacy.
@@ -52,11 +52,11 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-xl font-bold text-ink">
                 Information We Collect
               </h2>
 
-              <h3 className="mt-4 text-lg font-semibold text-white">
+              <h3 className="mt-4 text-lg font-semibold text-ink">
                 1. Analytics Data
               </h3>
               <p className="mt-2 leading-relaxed">
@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
                 personally.
               </p>
 
-              <h3 className="mt-6 text-lg font-semibold text-white">
+              <h3 className="mt-6 text-lg font-semibold text-ink">
                 2. Locally Stored Data
               </h3>
               <p className="mt-2 leading-relaxed">
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-xl font-bold text-ink">
                 Information We Do Not Collect
               </h2>
               <ul className="mt-3 list-disc space-y-1 pl-6">
@@ -101,7 +101,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-xl font-bold text-ink">
                 How We Use Your Information
               </h2>
               <p className="mt-2 leading-relaxed">
@@ -111,7 +111,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-xl font-bold text-ink">
                 Data Sharing
               </h2>
               <p className="mt-2 leading-relaxed">
@@ -127,7 +127,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-xl font-bold text-ink">
                 Data Retention
               </h2>
               <p className="mt-2 leading-relaxed">
@@ -138,7 +138,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-xl font-bold text-ink">
                 Children&apos;s Privacy
               </h2>
               <p className="mt-2 leading-relaxed">
@@ -148,7 +148,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-xl font-bold text-ink">
                 Changes to This Policy
               </h2>
               <p className="mt-2 leading-relaxed">
@@ -158,14 +158,14 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-white">Contact Us</h2>
+              <h2 className="text-xl font-bold text-ink">Contact Us</h2>
               <p className="mt-2 leading-relaxed">
                 If you have questions about this privacy policy, contact us
                 at:
               </p>
               <a
                 href="mailto:nedimmuminovic61@gmail.com"
-                className="mt-3 inline-block font-semibold gradient-text"
+                className="mt-3 inline-block font-semibold accent-text"
               >
                 nedimmuminovic61@gmail.com
               </a>
@@ -174,7 +174,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </article>
 
-      <footer className="mx-auto max-w-4xl px-6 py-10 text-center text-sm text-slate-500">
+      <footer className="mx-auto max-w-4xl px-6 py-10 text-center text-sm text-muted">
         © {new Date().getFullYear()} Nedim Muminovic
       </footer>
     </main>
